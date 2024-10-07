@@ -47,7 +47,6 @@ public class PasajeroModel {
         this.nacionalidad = nacionalidad;
     }
 
-    // Getters y Setters
     public int getId() {
         return id;
     }

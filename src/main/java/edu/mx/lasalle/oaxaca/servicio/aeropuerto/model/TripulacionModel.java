@@ -46,7 +46,6 @@ public class TripulacionModel {
         this.genero = genero;
     }
 
-    // Getters y Setters
     public int getId() {
         return id;
     }
