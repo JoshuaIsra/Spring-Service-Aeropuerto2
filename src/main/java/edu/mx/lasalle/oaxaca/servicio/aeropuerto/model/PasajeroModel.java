@@ -16,7 +16,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "Pasajero")   
 @Inheritance(strategy = InheritanceType.JOINED)
-public class PasajeroModel {
+public class PasajeroModel implements PersonaModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -47,6 +47,7 @@ public class PasajeroModel {
         this.nacionalidad = nacionalidad;
     }
 
+    // Getters y Setters
     public int getId() {
         return id;
     }
@@ -114,5 +115,35 @@ public class PasajeroModel {
                 ", discapacidad=" + discapacidad +
                 ", nacionalidad='" + nacionalidad + '\'' +
                 '}';
+    }
+
+    @Override
+    public void viajar() {
+        
+    }
+
+    @Override
+    public void abordar() {
+        
+    }
+
+    @Override
+    public void checkIn() {
+        
+    }
+
+    @Override
+    public void comer() {
+       
+    }
+
+    @Override
+    public void dormir() {
+       
+    }
+
+    @Override
+    public void irAlBaño() {
+       
     }
 }

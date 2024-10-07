@@ -7,7 +7,7 @@ import java.util.Date;
 @Entity
 @DiscriminatorValue("PILOTO")
 
-public class PilotoModel extends TripulacionModel {
+public class PilotoModel extends TripulacionModel{
 
     private String rango;
     private String licencia;

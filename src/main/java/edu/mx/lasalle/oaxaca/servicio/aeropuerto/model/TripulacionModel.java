@@ -17,7 +17,7 @@ import java.util.Date;
 @Inheritance(strategy = InheritanceType.JOINED)
 @DiscriminatorColumn(name = "dtype", discriminatorType = DiscriminatorType.STRING)
 
-public class TripulacionModel {
+public class TripulacionModel implements PersonaModel{
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -46,6 +46,7 @@ public class TripulacionModel {
         this.genero = genero;
     }
 
+    // Getters y Setters
     public int getId() {
         return id;
     }
@@ -122,5 +123,35 @@ public class TripulacionModel {
                 ", fechaNacimiento=" + fechaNacimiento +
                 ", genero='" + genero + '\'' +
                 '}';
+    }
+
+    @Override
+    public void viajar() {
+       
+    }
+
+    @Override
+    public void abordar() {
+        
+    }
+
+    @Override
+    public void checkIn() {
+        
+    }
+
+    @Override
+    public void comer() {
+       
+    }
+
+    @Override
+    public void dormir() {
+       
+    }
+
+    @Override
+    public void irAlBaño() {
+        
     }
 }
